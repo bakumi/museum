@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Museum - Главная</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="css/modal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="#page-top">
+		Museum </a>
+	</div>
+
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="desc.html">О музее</a>
+			</li>
+			<li>
+			<a href="exhibits.html">Экспонаты</a>
+			</li>
+			<li>
+			<a href="contact.html">Контакты</a>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+</nav>
+
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="brand-heading" style="color: white">Museum</h1>
+				<p class="intro-text">
+					Самый большой музей вычислительных технологий в России
+				</p>
+				<a href="#about" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
+<section id="about">
+<div class="container content-section text-center">
+	<div class="row">
+		<h2 style="letter-spacing: 3px;">О музее</h2>
+		<div class="col-lg-8 col-lg-offset-2">
+			<p>
+				В нашем музее вы окажетесь в путешествии сквозь эпохи вычислительных достижений. От ламповых монстров до компактных ноутбуков – история, проложившая путь к современному цифровому миру.
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+<section id="book" class="smth">
+<div class="container content-section text-center">
+	<div class="row">
+		<h2 style="letter-spacing: 3px; font-size: 30px;">Экскурсия</h2>
+		<div class="col-lg-8 col-lg-offset-2">
+			<p style="font-size: 18px; font-weight: 100; color: #e0e0e0;">
+				Вы можете узнать больше про экспонаты в нашем музее. Есть возможность заказать как индивидуальную, так и групповую экскурсию.
+			</p>
+			
+
+
+      <button class="btnghost-3">Забронировать экскурсию</button>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="booking-form">
+            <h1 style="letter-spacing: 3px;">Бронирование</h1>
+            <input type="text" id="surname" placeholder="Фамилия" required>
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="text" id="patronymic" placeholder="Отчество" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
+            <input type="email" id="email" placeholder="Электронная почта" required>
+            <select type="select" id="excursion-type" required>
+              <option value="group">Групповая экскурсия</option>
+              <option value="individual">Индивидуальная экскурсия</option>
+            </select>
+            <input type="date" id="date" placeholder="Дата" required min="2024-01-01">
+            <button type="submit" id="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+<div id="success-modal" class="modal success-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="success-icon">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+      </svg>
+    </div>
+    <h1>Успешное бронирование</h1>
+    <p>Вы успешно забронировали экскурсию.</p>
+  </div>
+</div>
+
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+  
+
+
+
+	<p class="heading" style="letter-spacing: 3px;">Учёные</p>
+
+  <div class="gallery-image">
+    <div class="img-box">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8C,_%D0%91%D0%BB%D0%B5%D0%B7">
+      <img src="img/blaise_pascal.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p style="white-space: pre-wrap;">Блез Паскаль</p>
+		  
+          <p class="opacity-low" style="font-size: 1em">Внёс огромный вклад в математику, физику и философию. Заложил основы многих научных дисциплин. Оказал влияние на последующие поколения ученых.</p>
+        </div>
+      </div> 
+    </a>
+    </div>
+    <div class="img-box">
+      <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BB%D1%83%D1%88%D0%BA%D0%BE%D0%B2,_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">
+      <img src="img/Glushkov.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Виктор Глушков</p>
+          <p class="opacity-low" style="font-size: 1em">Внёс огромный вклад в развитие математики, кибернетики и информатики. Создал ряд научных школ, которые подготовили тысячи специалистов.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="img-box">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE_%D0%B4%D0%B0_%D0%92%D0%B8%D0%BD%D1%87%D0%B8">
+      <img src="img/Leonardo_da_Vinci.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Леонардо да Винчи</p>
+          <p class="opacity-low" style="font-size: 1em">Провел множество исследований в области анатомии, физики, оптики, гидравлики и картографии. Сделал множество гениальных изобретений, которые опередили свое время.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="img-box">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B9%D0%BC%D0%B0%D0%BD,_%D0%94%D0%B6%D0%BE%D0%BD_%D1%84%D0%BE%D0%BD">
+      <img src="img/Neumann.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Джон фон Нейман</p>
+          <p class="opacity-low" style="font-size: 1em">Внёс значительный вклад в квантовую физику, квантовую логику, информатику и другие отрасли науки.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="img-box">
+      <a href="https://ru.wikipedia.org/wiki/%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3,_%D0%90%D0%BB%D0%B0%D0%BD">
+      <img src="img/Turing.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Алан Тьюринг</p>
+          <p class="opacity-low" style="font-size: 1em">Внёс значительный вклад в теорию алгоритмов, теорию чисел и логику. Разработал тест Тьюринга, который используется для определения разумности машины.</p>
+        </div>
+      </div> 
+    </div>
+    </a>
+  </div>
+
+
+
+    <h2 style="letter-spacing: 3px;"> Отзывы наших посетителей </h2>
+
+
+ 
+    <div class="reviewSection" style="color:white">
+
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/close-up-of-bearded-tired-man_176420-18785.avif" alt="">
+                    <span>Андрей</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+
+                </ul>
+            </div>
+            <article>
+                <p class="review">Отличное место для погружения в историю вычислительной техники! Впечатляющая коллекция античных и современных компьютеров на любой вкус, всё подробно описано и интересно рассказано гидами.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/emotions-and-people-concept-headshot-of-serious-looking-handsome-man-with-beard-looking-confident-and-determined_1258-26730.avif" alt="">
+                    <span>Владимир</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Очень познавательное посещение! Увидел множество редких экспонатов и узнал много нового о развитии компьютерной технологии. Особенно впечатлили демонстрации работы старых компьютеров.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/human-face-expressions-and-emotions-positive-joyful-young-beautiful-female-with-fair-straight-hair-in-casual-clothing_176420-15188.avif" alt="">
+                    <span>Анастасия</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Музей великолепно организован, а экспонаты воссоздают атмосферу каждой эпохи компьютерной индустрии. Очень интересно было побывать здесь и узнать, как мы пришли к современным технологиям.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/portrait-of-white-man-isolated_53876-40306.avif" alt="">
+                    <span>Вадим</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Прекрасное место для посещения семьей! Дети были в восторге от интерактивных демонстраций и игровых зон. Музей действительно заинтересовал их и дал им понять, как эволюционировали компьютеры.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/portrait-of-young-woman-with-natural-make-up_23-2149084942.avif" alt="">
+                    <span>Елена</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Посетила музей в рамках экскурсии по городу и была поражена его содержанием! Очень понравилась презентация различных этапов развития вычислительных технологий и их влияния на нашу жизнь.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/scale_1200.jpg" alt="">
+                    <span>Екатерина</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Музей предлагает превосходный обзор истории компьютеров. Экспонаты хорошо подписаны, а экскурсии предоставляют глубокий взгляд на технические и исторические аспекты.</p>
+                <p>1 января 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/1678385566.jpg" alt="">
+                    <span>Женя</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Отличное сочетание исторических фактов и технических особенностей в экспозициях. Посещение музея вызвало у меня глубокое уважение к развитию вычислительной индустрии.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+        </div>
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="reviews/causal-young-girl-with-detailed-skin-textured-face_1000823-150333.avif" alt="">
+                    <span>Юля</span>
+                </div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Впечатляющая коллекция старинных и современных компьютеров, а также интерактивные мероприятия для посетителей делают это место настоящим жемчужиной для любителей технологий.</p>
+                <p>Jan 01, 2023</p>
+            </article>
+    </div>
+</div>
+
+
+<section class="infographics-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="infographic-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Посетители за всё время</h3>
+                    <p style="font-family: sans-serif; font-size: 16px; color: #ccc">1255000+ человек</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infographic-item">
+                    <i class="fas fa-archive"></i>
+                    <h3>Экспонаты</h3>
+                    <p style="font-family: sans-serif; font-size: 16px; color: #ccc">539 штук</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infographic-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <h3>Дата создания музея</h3>
+                    <p style="font-family: sans-serif; font-size: 16px; color: #ccc">1978 год</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<footer style="background-color: white; padding: 0; margin: 0; top: 20%">
+<section id="contact">
+<div class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>Связь с нами</h2>
+			
+			<p>
+				<i><a href="mailto:museum@gmail.com" style="border-bottom:1px dashed #ccc; font-size: 20px; font-family: sans-serif;">museum@gmail.com</a></i>
+			</p>
+			<ul class="list-inline banner-social-buttons">
+				<li>
+				<a href="https://twitter.com/elonmusk" class="btn btnghost btn-lg"><i class="fa-brands fa-x-twitter"></i><span class="network-name"> Twitter</span></a>
+				</li>
+				<li>
+				<a href="https://t.me/bakumii" class="btn btnghost btn-lg"><i class="fa-brands fa-telegram"></i><span class="network-name"> Telegram</span></a>
+				</li>
+				<li>
+				<a href="https://vk.com/bakumii" class="btn btnghost btn-lg"><i class="fa-brands fa-vk"></i><span class="network-name"> Vkontakte</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/theme.js"></script>
+<script src="https://kit.fontawesome.com/5dc59ca68b.js" crossorigin="anonymous"></script>
+<script src="js/modal.js"></script>
+
+
+</body>
+</html>
