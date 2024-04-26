@@ -1,0 +1,363 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    animation: fadeIn 0.3s ease; /* Добавляем анимацию для появления */
+}
+
+.modal.fadeOut {
+    animation: fadeOut 0.3s ease; /* Добавляем анимацию для исчезновения */
+}
+
+  
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+    transition: transform 2.3s ease;
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+
+  
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 32px;
+    font-weight: 200;
+    margin-top: -10px;
+    transition: 0.3s;
+  }
+  
+
+
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  select[type="select"] {
+    color: #888;
+    border: 0.1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 12px;
+    transition: 0.3s
+  }
+
+  input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select[type="select"]:focus {
+  border-color: #636363; /* Цвет рамки при фокусе */
+  outline: none; /* Убираем стандартное выделение */
+  transform: scale(1.01);
+}
+
+
+  button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 6px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    border:2px solid #333;
+    background-color: #333;
+    padding:15px 20px;
+    letter-spacing:3px;
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#ffffff;
+    margin-top:20px;
+    display:inline-block;
+    transition: 0.4s ease;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color:#333;
+    border:2px solid #333;
+    text-align: center;
+  }
+
+  .btnghost-3 {
+    border:2px solid #333;
+    background-color: #333;
+    padding:15px 20px;
+    letter-spacing:3px;
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#ffffff;
+    margin-top:20px;
+    display:inline-block;
+    transition: 0.4s ease;
+    text-align: center;
+  }
+
+  .btnghost-3:hover {
+    background-color: #fff;
+    color:#333;
+    border:2px solid #333;
+    text-align: center;
+  }
+
+  
+  h1 {
+    color: #2b2b2b; 
+    font-weight: 300; 
+    font-size: 15px; 
+    font-family:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+  @media (min-width: 375px) {
+    h1 {
+        color: #2b2b2b; 
+        font-weight: 300; 
+        font-size: 13px; 
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        font-family:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .close {
+        font-size: 25px;
+        margin-top: -7px;
+        padding: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .modal-content {
+        margin-top: 200px;
+    }
+
+    .btnghost-3 {
+        border:2px solid #fff;
+        background-color:transparent;
+        padding:15px 20px;
+        letter-spacing:3px;
+        font-size:12px;
+        text-transform:uppercase;
+        font-weight:400;
+        color:#fff;
+        margin-top:20px;
+        display:inline-block;
+      }
+
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+        color: #2b2b2b; 
+        font-weight: 500; 
+        font-size: 15px; 
+        font-family:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .close {
+        color: rgb(0, 0, 0);
+        float: right;
+        font-size: 32px;
+        font-weight: 200;
+        margin-top: -10px;
+        padding: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: auto;
+    }
+  }
+
+
+
+
+  
+  
+  .success-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .success-modal .modal-content {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .success-modal .success-icon {
+    margin-bottom: 20px;
+  }
+  
+  .success-modal h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .success-modal p {
+    font-size: 16px;
+  }
+  
+  .success-modal svg {
+    width: 50px;
+    height: 50px;
+    fill: #28a745; /* Зеленый цвет галочки */
+  }
+  
+
+  .success-modal .checkmark {
+    width: 50px;
+    height: 50px;
+    animation: drawCircle 0.6s ease-in-out forwards, drawCheck 0.6s ease-in-out 0.6s forwards;
+  }
+  
+  .checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #28a745;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark-check {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #666666;
+    fill: none;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+  
+  @keyframes drawCircle {
+    0% {
+      stroke-dashoffset: 166;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes drawCheck {
+    0% {
+      stroke-dashoffset: 48;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+
+  @media (max-width: 375px) {
+    .modal-content {
+        margin: 20% auto; /* Изменяем отступы сверху и снизу для выравнивания */
+        width: 90%; /* Уменьшаем ширину модального окна */
+        padding: 10px; /* Уменьшаем внутренний отступ */
+    }
+
+    .close {
+        font-size: 35px; /* Уменьшаем размер кнопки закрытия */
+        margin-top: -30px; /* Изменяем отступы кнопки закрытия */
+        margin-right: -20px;
+    }
+
+    .modal-content .success-modal h1 {
+        font-size: 12px; /* Уменьшаем размер заголовка */
+    }
+
+    p {
+        font-size: 14px; /* Уменьшаем размер текста */
+    }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+      margin: 20% auto; /* Изменяем отступы сверху и снизу для выравнивания */
+      width: 90%; /* Уменьшаем ширину модального окна */
+      padding: 10px; /* Уменьшаем внутренний отступ */
+  }
+
+  .close {
+      font-size: 35px; /* Уменьшаем размер кнопки закрытия */
+      margin-top: -30px; /* Изменяем отступы кнопки закрытия */
+      margin-right: -20px;
+  }
+
+  .modal-content .success-modal h1 {
+      font-size: 12px; /* Уменьшаем размер заголовка */
+  }
+
+  p {
+      font-size: 14px; /* Уменьшаем размер текста */
+  }
+}
